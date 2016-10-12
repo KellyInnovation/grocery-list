@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "grocery-list",
   "version": "1.0.0",
-  "description": "",
-  "repository": "",
+  "description": "Make grocery list of items",
+  "repository": "https://github.com/KellyInnovation/grocery-list",
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -29,6 +29,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'rest_framework',
     'core',
+    'api',
+    'groceries',
 )
 
 MIDDLEWARE_CLASSES = (
