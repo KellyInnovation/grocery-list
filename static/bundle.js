@@ -31885,7 +31885,7 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = "<header>\n    <nav class=\"navbar navbar-inverse navbar-static-top\">\n        <div class=\"container-fluid\">\n            <div class=\"navbar-header\">\n                <span class=\"navbar-brand\">\n                    <i class=\"fa fa-thumbs-o-up\"></i> Django Seed\n                </span>\n            </div>\n        </div>\n    </nav>\n</header>\n<div class=\"container-fluid\">\n    Angular is working!\n</div>"
+	module.exports = "<header>\n    <nav class=\"navbar navbar-inverse navbar-static-top\">\n        <div class=\"container-fluid\">\n            <div class=\"navbar-header\">\n                <span class=\"navbar-brand\">\n                    <i class=\"fa fa-cutlery\" aria-hidden=\"true\"></i> \n                    Grocery List\n                </span>\n            </div>\n        </div>\n    </nav>\n</header>\n<div class=\"container-fluid app-body\">\n    <grocery-page />\n    Test\n</div>"
 
 /***/ },
 /* 6 */
