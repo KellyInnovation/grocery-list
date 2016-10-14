@@ -1,0 +1,56 @@
+<form ng-submit="groceryEditCtrl.saveGrocery()">
+	<div class="form-group">
+		<label>
+			Grocery Item
+		</label>
+		<input 
+			class="form-control" 
+			type="text" 
+			ng-model="groceryEditCtrl.editedGrocery.name" >	
+
+		<label>
+			Category
+		</label>
+		<select 
+			class="form-control" 
+			ng-model="groceryEditCtrl.editedGrocery.categories" 
+		>
+			<option value="MEAT">Meat</option>
+			<option value="PRODUCE">Produce</option>
+			<option value="DAIRY">Dairy</option>
+			<option value="BAKERY">Bakery</option>
+			<option value="BEVERAGES">Beverages</option>
+			<option value="CANNED">Canned or Jarred</option>
+			<option value="DRY">Dry Goods</option>
+			<option value="BAKING">Baking</option>
+			<option value="FROZEN">Frozen</option>
+			<option value="PAPER">Paper</option>
+			<option value="PERSONAL">Personal</option>
+			<option value="CLEANERS">Cleaners</option>
+			<option value="OTHER">Other</option>
+		</select>	
+
+		<label>
+			Quantity
+		</label>
+		<input 
+			class="form-control" 
+			type="text" 
+			ng-model="groceryEditCtrl.editedGrocery.quantity" >	
+
+		<label>
+			Price
+		</label>
+		<input 
+			class="form-control" 
+			type="text" 
+			ng-model="groceryEditCtrl.editedGrocery.price" >	
+	</div>
+	<button 
+		class="btn btn-primary"
+		type="submit"
+
+	>
+		Add Item
+	</button>
+</form>

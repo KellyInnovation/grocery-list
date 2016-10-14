@@ -8,6 +8,7 @@ class GroceryItem(models.Model):
 		('BAKERY', 'Bread/Bakery'),
 		('BEVERAGES', 'Beverages'),
 		('CANNED', 'Canned / Jarred Goods'),
+		('DRY', 'Dried Goods'),
 		('BAKING', 'Baking Goods'),
 		('FROZEN', 'Frozen Foods'),
 		('PAPER', 'Paper Goods'),

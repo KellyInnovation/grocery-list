@@ -4,5 +4,5 @@ from .models import GroceryItem
 from .serializers import GroceryItemSerializer
 
 class GroceryItemViewSet(viewsets.ModelViewSet):
-	queryset = GroceryItem.objects.all()
+	queryset = GroceryItem.objects.all().order_by('categories')
 	serializer_class = GroceryItemSerializer
