@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='groceryitem',
             name='categories',
-            field=models.CharField(default='Other', blank=True, max_length=1, choices=[('MEAT', 'Meat'), ('PRODUCE', 'Produce'), ('DAIRY', 'Dairy'), ('BAKERY', 'Bread/Bakery'), ('BEVERAGES', 'Beverages'), ('CANNED', 'Canned / Jarred Goods'), ('BAKING', 'Baking Goods'), ('FROZEN', 'Frozen Foods'), ('PAPER', 'Paper Goods'), ('PERSONAL', 'Personal Care'), ('CLEANERS', 'Cleaners'), ('OTHER', 'Other')], null=True),
+            field=models.CharField(default='Other', blank=True, max_length=50, choices=[('MEAT', 'Meat'), ('PRODUCE', 'Produce'), ('DAIRY', 'Dairy'), ('BAKERY', 'Bread/Bakery'), ('BEVERAGES', 'Beverages'), ('CANNED', 'Canned / Jarred Goods'), ('BAKING', 'Baking Goods'), ('FROZEN', 'Frozen Foods'), ('PAPER', 'Paper Goods'), ('PERSONAL', 'Personal Care'), ('CLEANERS', 'Cleaners'), ('OTHER', 'Other')], null=True),
         ),
     ]
