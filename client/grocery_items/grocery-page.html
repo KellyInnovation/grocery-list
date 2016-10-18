@@ -7,11 +7,17 @@
 		/>
 	</div>
 	<div class="col-md-8 " >
-		<grocery-item 
-			ng-repeat="grocery in groceryPageCtrl.groceries" 
-			grocery="grocery" 
-			delete="groceryPageCtrl.deleteGrocery(groceryToDelete)"
-			update="groceryPageCtrl.updateGrocery(groceryToUpdate)"
-		/>
+		<div ng-repeat="(key, value) in groceryPageCtrl.groceries | groupBy: 'categories'">
+				<div class="col-xs-12 ">
+					<h4 class="category-head">{{ key}}</h4>	
+				</div>
+
+			<grocery-item 
+				ng-repeat="grocery in value" 
+				grocery="grocery" 
+				delete="groceryPageCtrl.deleteGrocery(groceryToDelete)"
+				update="groceryPageCtrl.updateGrocery(groceryToUpdate)"
+			/>
+		</div>
 	</div>
 </div>

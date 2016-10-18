@@ -5,9 +5,7 @@
 	ng-mouseover="groceryItemCtrl.setShowControls(true)"
 	ng-mouseout="groceryItemCtrl.setShowControls(false)"
 >
-	<div class="col-xs-12 ">
-		<h4 class="category-head">{{ groceryItemCtrl.grocery.categories}}</h4>	
-	</div>
+
 	<button 
 		class="btn btn-warning col-xs-1 grocery-checked" 
 		ng-if="!groceryItemCtrl.grocery.checked"

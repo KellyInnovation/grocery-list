@@ -4,11 +4,14 @@ function GroceryPageController(groceryAPIService, flashesService, $interval) {
 	const ctrl = this;
 	ctrl.editedGrocery = {};
 
+
 	function getGroceries() {
 		groceryAPIService.groceries.get().$promise.then((data) => {
 			ctrl.groceries = data.results;
 		});
 	};
+
+
 
 	getGroceries();
 	$interval(getGroceries, 50000);

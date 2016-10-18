@@ -1,6 +1,7 @@
 import angular from 'angular';
 import 'angular-resource';
 import 'angular-animate';
+import 'angular-filter';
 
 import FlashesModule from '../flashes/flashes.module';
 
@@ -13,6 +14,7 @@ import groceryAPIService from './grocery-api.service';
 const GroceryModule = angular.module('groceries', [
 	'ngResource',
 	'ngAnimate',
+	'angular.filter',
 	FlashesModule.name,
 ])
 	.config(($resourceProvider) => {
