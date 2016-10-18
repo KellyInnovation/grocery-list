@@ -21,7 +21,7 @@ class GroceryItem(models.Model):
 	quantity = models.IntegerField()
 	price = models.DecimalField(max_digits=6, decimal_places=2, blank=True, null=True, default=1.00)
 	created = models.DateTimeField(auto_now_add=True)
-	categories = models.CharField(max_length=1, choices=CATEGORY_CHOICES, default='Other', null=True, blank=True)
+	categories = models.CharField(max_length=100, choices=CATEGORY_CHOICES, default='Other', null=True, blank=True)
 	checked = models.BooleanField(default=False)
 
 	def __str__(self):
