@@ -6,6 +6,8 @@ const groceryItemComponent = {
 	template,
 	bindings: {
 		grocery: '<',
+		delete: '&',
+		update: '&',
 	},
 	controller: GroceryItemController,
 	controllerAs: 'groceryItemCtrl',

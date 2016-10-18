@@ -9,7 +9,8 @@ footer {
 }
 
 .grocery-item-panel {
-	border: 2px solid grey;
+	border: 2px solid;
+	border-color: rgb(44,62,80);
 }
 
 .food-item-icon {
@@ -18,6 +19,48 @@ footer {
 	color: white;
 }
 
-.food-checkbox {
-	background-color: grey;
+
+.grocery-checked {
+
+	height: 66px;
+	color: white;
+}
+
+.category-head {
+	color: white;
+	background-color: rgb(44,62,80);
+	text-align: center;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+
+flashes {
+	position: fixed;
+	bottom: 0;
+	z-index: 20000;
+}
+
+
+flashes .alert.ng-enter {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    transform: translate(-200px, 0);
+}
+
+flashes .alert.ng-enter-active {
+  transform: translate(0, 0);
+}
+
+flashes .alert.ng-leave {
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  
+  transform: translate(0, 0);
+}
+
+flashes .alert.ng-leave-active {
+    transform: translate(-200px, 0);
 }

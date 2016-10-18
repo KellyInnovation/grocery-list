@@ -10,6 +10,8 @@
 		<grocery-item 
 			ng-repeat="grocery in groceryPageCtrl.groceries" 
 			grocery="grocery" 
+			delete="groceryPageCtrl.deleteGrocery(groceryToDelete)"
+			update="groceryPageCtrl.updateGrocery(groceryToUpdate)"
 		/>
 	</div>
 </div>

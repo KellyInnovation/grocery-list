@@ -7,6 +7,7 @@ const groceryEditComponent = {
 	bindings: {
 		grocery: '<',
 		save: '&',
+		cancel: '&',
 	},
 	controller: GroceryEditController,
 	controllerAs: 'groceryEditCtrl',
